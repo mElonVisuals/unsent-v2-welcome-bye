@@ -89,7 +89,7 @@ client.once(Events.ClientReady, async c => {
         commandsToDeploy.push(command.data.toJSON());
     }
 
-    const rest = new REST({ version: '10' }).setToken(config.bot.token);
+    const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_TOKEN);;
 
     try {
         console.log(`Started refreshing ${commandsToDeploy.length} application (/) commands.`);
@@ -128,7 +128,7 @@ client.on(Events.InteractionCreate, async interaction => {
 });
 
 
-client.login(config.bot.token);
+client.login(process.env.DISCORD_TOKEN);
 
 process.on('unhandledRejection', error => {
     console.error('Unhandled promise rejection:', error);
