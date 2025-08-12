@@ -1,10 +1,10 @@
 {
   "bot": {
-    "token": "${DISCORD_TOKEN}"
+    "token": ""
   },
   "channels": {
-    "join_log": "${JOIN_LOG_CHANNEL_ID}",
-    "leave_log": "${LEAVE_LOG_CHANNEL_ID}"
+    "join_log": "",
+    "leave_log": ""
   },
   "fallback_messages": {
     "join": "Welcome, {user}! Enjoy your stay in {server.name}.",
@@ -15,23 +15,23 @@
       "embed": {
         "title": "{eye_emoji} {bot_name} is watching.",
         "description": "**{username}** logged in.\ntyping...\nbut will you ever press send?",
-        "eye_emoji_id": "${EYE_EMOJI_ID}",
-        "author_icon_url": "${AUTHOR_ICON_URL}"
+        "eye_emoji_id": "",
+        "author_icon_url": ""
       }
     }
   },
-  "guild_id": "${GUILD_ID}",
+  "guild_id": "",
   "permissions": {
     "allowed_role_ids": [
-      "${ALLOWED_ROLE_ID}"
+      ""
     ]
   },
   "bot_presence": {
-    "status": "${BOT_STATUS}",
+    "status": "",
     "activity": {
-      "type": "${BOT_ACTIVITY_TYPE}",
-      "name": "${BOT_ACTIVITY_NAME}",
-      "url": "${BOT_ACTIVITY_URL}"
+      "type": "",
+      "name": "",
+      "url": ""
     }
   }
 }
